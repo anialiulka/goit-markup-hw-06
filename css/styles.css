@@ -453,6 +453,7 @@ img {
 }
 .email-box {
 	display: flex;
+	position: relative;
 }
 .subscription-input {
 	height: 40px;
@@ -461,6 +462,17 @@ img {
 	border-radius: 4px;
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	background-color: inherit;
+}
+.footer-email {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 16px;
+	color: background: rgba(255, 255, 255, 0.6);
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 2;
+	letter-spacing: 0.04em;
 }
 .subscribe-btn {
 	display: flex;
@@ -652,7 +664,7 @@ textarea {
 .modal-form {
 	margin-bottom: 24px;
 }
-.form-field {
+.form-field {position: relative;
 	display: flex;
 	flex-direction: column;
 }
@@ -676,7 +688,16 @@ textarea {
 	line-height: 1.2;
 	letter-spacing: 0.01em;
 }
+.input-icon{position: absolute;
+left: 16px;
+bottom: 8px;
+display:block;
+height: 24px;
+width: 18px;
+fill: var(--secondary-text-color);}
 
+.person{height: 18px;
+bottom: 11px;}
 .comment textarea::placeholder {
 	color: rgba(117, 117, 117, 0.5);
 }
