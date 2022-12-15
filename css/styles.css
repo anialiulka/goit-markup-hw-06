@@ -680,7 +680,10 @@ textarea {
 	height: 40px;
 	border: solid 1px rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
+	outline: none;
 }
+.form-input:hover, .form-input:focus {border:solid 1px var(--logo-hover-color) ;}
+.form-input:hover + .input-icon, .form-input:focus + .input-icon {fill: var(--logo-hover-color);}
 .form-field textarea::placeholder,
 .form-label {
 	font-size: 12px;
